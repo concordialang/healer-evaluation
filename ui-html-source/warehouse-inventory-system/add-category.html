@@ -1,0 +1,168 @@
+<body>
+  <header id="header">
+    <div class="logo pull-left">OSWA - Inventory</div>
+    <div class="header-content">
+      <div class="header-date pull-left">
+        <strong>March 17, 2022, 10:10 pm</strong>
+      </div>
+      <div class="pull-right clearfix">
+        <ul class="info-menu list-inline list-unstyled">
+          <li class="profile">
+            <a
+              href="#"
+              data-toggle="dropdown"
+              class="toggle"
+              aria-expanded="false"
+            >
+              <img
+                src="uploads/users/no_image.jpg"
+                alt="user-image"
+                class="img-circle img-inline"
+              />
+              <span> Admin User <i class="caret"></i></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="profile.php?id=1">
+                  <i class="glyphicon glyphicon-user"></i>
+                  Profile
+                </a>
+              </li>
+              <li>
+                <a href="edit_account.php" title="edit account">
+                  <i class="glyphicon glyphicon-cog"></i>
+                  Settings
+                </a>
+              </li>
+              <li class="last">
+                <a href="logout.php">
+                  <i class="glyphicon glyphicon-off"></i>
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="sidebar">
+    <ul>
+      <li>
+        <a href="admin.php">
+          <i class="glyphicon glyphicon-home"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="submenu-toggle">
+          <i class="glyphicon glyphicon-user"></i>
+          <span>User Management</span>
+        </a>
+        <ul class="nav submenu">
+          <li><a href="group.php">Manage Groups</a></li>
+          <li><a href="users.php">Manage Users</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="categorie.php">
+          <i class="glyphicon glyphicon-indent-left"></i>
+          <span>Categories</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="submenu-toggle">
+          <i class="glyphicon glyphicon-th-large"></i>
+          <span>Products</span>
+        </a>
+        <ul class="nav submenu">
+          <li><a href="product.php">Manage products</a></li>
+          <li><a href="add_product.php">Add product</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="media.php">
+          <i class="glyphicon glyphicon-picture"></i>
+          <span>Meadias</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="submenu-toggle">
+          <i class="glyphicon glyphicon-th-list"></i>
+          <span>Sales</span>
+        </a>
+        <ul class="nav submenu">
+          <li><a href="sales.php">Manage Sales</a></li>
+          <li><a href="add_sale.php">Add Sale</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="submenu-toggle">
+          <i class="glyphicon glyphicon-signal"></i>
+          <span>Sales Report</span>
+        </a>
+        <ul class="nav submenu">
+          <li><a href="sales_report.php">Sales by dates</a></li>
+          <li><a href="monthly_sales.php">Monthly sales</a></li>
+          <li><a href="daily_sales.php">Daily sales</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="page">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-5">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <strong>
+                <span class="glyphicon glyphicon-th"></span>
+                <span>Add New Categorie</span>
+              </strong>
+            </div>
+            <div class="panel-body">
+              <form method="post" action="categorie.php">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="categorie-name"
+                    placeholder="Categorie Name"
+                  />
+                </div>
+                <button type="submit" name="add_cat" class="btn btn-primary">
+                  Add categorie
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <strong>
+                <span class="glyphicon glyphicon-th"></span>
+                <span>All Categories</span>
+              </strong>
+            </div>
+            <div class="panel-body">
+              <table class="table table-bordered table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th class="text-center" style="width: 50px">#</th>
+                    <th>Categories</th>
+                    <th class="text-center" style="width: 100px">Actions</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

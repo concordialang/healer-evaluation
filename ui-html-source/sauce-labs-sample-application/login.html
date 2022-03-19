@@ -1,0 +1,63 @@
+<body>
+  <div id="root">
+    <div>
+      <div class="login_logo"></div>
+      <div class="login_wrapper">
+        <div class="login_wrapper-inner">
+          <div id="login_button_container" class="form_column">
+            <div class="login-box">
+              <form>
+                <div class="form_group">
+                  <input
+                    class="input_error form_input"
+                    placeholder="Username"
+                    type="text"
+                    data-test="username"
+                    id="user-name"
+                    name="user-name"
+                    autocorrect="off"
+                    autocapitalize="none"
+                  />
+                </div>
+                <div class="form_group">
+                  <input
+                    class="input_error form_input"
+                    placeholder="Password"
+                    type="password"
+                    data-test="password"
+                    id="password"
+                    name="password"
+                    autocorrect="off"
+                    autocapitalize="none"
+                  />
+                </div>
+                <div class="error-message-container"></div>
+                <input
+                  type="submit"
+                  class="submit-button btn_action"
+                  data-test="login-button"
+                  id="login-button"
+                  name="login-button"
+                  value="Login"
+                />
+              </form>
+            </div>
+          </div>
+          <div class="bot_column"></div>
+        </div>
+        <div class="login_credentials_wrap">
+          <div class="login_credentials_wrap-inner">
+            <div id="login_credentials" class="login_credentials">
+              <h4>Accepted usernames are:</h4>
+              standard_user<br />locked_out_user<br />problem_user<br />performance_glitch_user<br />
+            </div>
+            <div class="login_password">
+              <h4>Password for all users:</h4>
+              secret_sauce
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

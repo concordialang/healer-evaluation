@@ -1,0 +1,216 @@
+<body>
+  <header id="header">
+    <div class="logo pull-left">OSWA - Inventory</div>
+    <div class="header-content">
+      <div class="header-date pull-left">
+        <strong>March 17, 2022, 10:11 pm</strong>
+      </div>
+      <div class="pull-right clearfix">
+        <ul class="info-menu list-inline list-unstyled">
+          <li class="profile">
+            <a
+              href="#"
+              data-toggle="dropdown"
+              class="toggle"
+              aria-expanded="false"
+            >
+              <img
+                src="uploads/users/no_image.jpg"
+                alt="user-image"
+                class="img-circle img-inline"
+              />
+              <span> Admin User <i class="caret"></i></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="profile.php?id=1">
+                  <i class="glyphicon glyphicon-user"></i>
+                  Profile
+                </a>
+              </li>
+              <li>
+                <a href="edit_account.php" title="edit account">
+                  <i class="glyphicon glyphicon-cog"></i>
+                  Settings
+                </a>
+              </li>
+              <li class="last">
+                <a href="logout.php">
+                  <i class="glyphicon glyphicon-off"></i>
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="sidebar">
+    <ul>
+      <li>
+        <a href="admin.php">
+          <i class="glyphicon glyphicon-home"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="submenu-toggle">
+          <i class="glyphicon glyphicon-user"></i>
+          <span>User Management</span>
+        </a>
+        <ul class="nav submenu">
+          <li><a href="group.php">Manage Groups</a></li>
+          <li><a href="users.php">Manage Users</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="categorie.php">
+          <i class="glyphicon glyphicon-indent-left"></i>
+          <span>Categories</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="submenu-toggle">
+          <i class="glyphicon glyphicon-th-large"></i>
+          <span>Products</span>
+        </a>
+        <ul class="nav submenu">
+          <li><a href="product.php">Manage products</a></li>
+          <li><a href="add_product.php">Add product</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="media.php">
+          <i class="glyphicon glyphicon-picture"></i>
+          <span>Meadias</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="submenu-toggle">
+          <i class="glyphicon glyphicon-th-list"></i>
+          <span>Sales</span>
+        </a>
+        <ul class="nav submenu">
+          <li><a href="sales.php">Manage Sales</a></li>
+          <li><a href="add_sale.php">Add Sale</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="submenu-toggle">
+          <i class="glyphicon glyphicon-signal"></i>
+          <span>Sales Report</span>
+        </a>
+        <ul class="nav submenu">
+          <li><a href="sales_report.php">Sales by dates </a></li>
+          <li><a href="monthly_sales.php">Monthly sales</a></li>
+          <li><a href="daily_sales.php">Daily sales</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="page">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <strong>
+                <span class="glyphicon glyphicon-th"></span>
+                <span>Add New Product</span>
+              </strong>
+            </div>
+            <div class="panel-body">
+              <div class="col-md-12">
+                <form method="post" action="add_product.php" class="clearfix">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <span class="input-group-addon">
+                        <i class="glyphicon glyphicon-th-large"></i>
+                      </span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="product-title"
+                        placeholder="Product Title"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <select class="form-control" name="product-categorie">
+                          <option value="">Select Product Category</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6">
+                        <select class="form-control" name="product-photo">
+                          <option value="">Select Product Photo</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-shopping-cart"></i>
+                          </span>
+                          <input
+                            type="number"
+                            class="form-control"
+                            name="product-quantity"
+                            placeholder="Product Quantity"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-usd"></i>
+                          </span>
+                          <input
+                            type="number"
+                            class="form-control"
+                            name="buying-price"
+                            placeholder="Buying Price"
+                          />
+                          <span class="input-group-addon">.00</span>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="input-group">
+                          <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-usd"></i>
+                          </span>
+                          <input
+                            type="number"
+                            class="form-control"
+                            name="saleing-price"
+                            placeholder="Selling Price"
+                          />
+                          <span class="input-group-addon">.00</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    type="submit"
+                    name="add_product"
+                    class="btn btn-danger"
+                  >
+                    Add product
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
